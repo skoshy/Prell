@@ -109,6 +109,12 @@ export default class MenuBuilder {
           }
         },
         {
+          label: 'Toggle Always on Top',
+          click: () => {
+            this.mainWindow.setAlwaysOnTop(!this.mainWindow.isAlwaysOnTop());
+          }
+        },
+        {
           label: 'Toggle Developer Tools',
           accelerator: 'Alt+Command+I',
           click: () => {
